@@ -1,0 +1,97 @@
+how to start ?
+
+1-npm init
+2-3abbe el data
+   package name
+   version
+   description
+   entry point: app.js
+   test..
+   git...
+   key..
+   aut...
+yes
+
+
+
+MNA3MUL INSTALL LAL EXPRESS W KAMEN MNA3MUL INSATLL LAL body-parser
+mishen nen2ol ma3lumet men el form                 odm
+
+npm install --save express body-parser ejs mongodb mongoose
+
+
+Lah nechtegel 3al mvc..so lah n2asem el project taba3na
+la 3 folders
+
+controllers  
+models
+views
+
+folder for assets
+folder for routes
+
+and app.js
+
+======================================
+
+Hala2 heda deyman yoktab
+
+                        
+const express = require("express");
+
+const path = require("path");
+
+const app = express();
+
+app.use(express.static(path.join(__dirname, "assets")));
+app.set("view engine", "ejs");
+app.set("views", "views"); // default
+
+app.listen(3000, (err) => {
+  console.log(err);
+  console.log("server listen on port 3000");
+});
+
+
+=================================
+
+start the server
+   nodemon app.js
+
+
+----------------------------------------------------------------
+
+
+const express = require("express");
+
+const path = require("path");
+
+const app = express();
+
+app.use(express.static(path.join(__dirname, "assets")));
+app.set("view engine", "ejs");
+app.set("views", "views"); // default
+
+app.get("/", (req, res, next) => {
+  res.send("hello");
+});
+
+app.listen(3000, (err) => {
+  console.log("server listen on port 3000");
+});
+
+==========================================================
+bootsrap / compiled css and js
+download
+
+extract lal file
+fut 3a css taba3 hal file w 5od meno
+bootsrap.min
+w hetto bel assets
+
+w hett el bootsrap.min li bel js bi aleb
+----------------------------------
+and jib hayda el link
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
